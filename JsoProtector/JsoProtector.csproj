@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--
+      .NET Standard 2.0 is the most-portable target: covers .NET Framework 4.6.1+,
+      .NET Core 2.0+, .NET 5+/6+/7+/8+, Mono, Unity, Xamarin. Anything that's
+      shipped C# in the last seven years can consume this package.
+    -->
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Deterministic>true</Deterministic>
+
+    <PackageId>JsoProtector</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>JavaScript Obfuscator</Authors>
+    <Company>JavaScript Obfuscator</Company>
+    <Description>.NET client for the JavaScript Obfuscator HTTP API: protect JavaScript from C# builds and CI. Same protect() surface as the javascriptobfuscator-com npm package and the Python and Go clients.</Description>
+    <PackageProjectUrl>https://javascriptobfuscator.com/docs/clients.aspx</PackageProjectUrl>
+    <PackageTags>javascript;obfuscator;javascript-obfuscator;obfuscation;code-protection;anti-tamper;symbolication</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/richtexteditor/jso-protector-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <!-- Pin the public repository's commit. Packing from the monorepo would
+         otherwise record a monorepo commit hash that does not exist in this
+         repository. 5d01359 was verified file-for-file identical to this source. -->
+    <RepositoryCommit>5d0135954c68a1181ad0bef27e4f45ebc85978a4</RepositoryCommit>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- System.Text.Json is the standard JSON path on modern .NET; pull in the
+         NuGet shim for net-standard 2.0 consumers. -->
+    <PackageReference Include="System.Text.Json" Version="6.0.10" />
+  </ItemGroup>
+
+</Project>
