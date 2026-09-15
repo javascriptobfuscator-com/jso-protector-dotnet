@@ -1,6 +1,6 @@
 # JsoProtector — .NET client
 
-.NET client for the [JavaScript Obfuscator](https://javascriptobfuscator.com/) HTTP API. Mirrors the `protect()` surface of the [npm `javascriptobfuscator-com` CLI](https://javascriptobfuscator.com/docs/npmcli.aspx), the [Python client](https://github.com/richtexteditor/jso-protector-python), and the [Go client](https://github.com/richtexteditor/jso-protector-go) so behavior stays in lockstep across runtimes.
+.NET client for the [JavaScript Obfuscator](https://javascriptobfuscator.com/) HTTP API. Mirrors the `protect()` surface of the [npm `javascriptobfuscator-com` CLI](https://javascriptobfuscator.com/docs/npmcli.aspx), the [Python client](https://github.com/javascriptobfuscator-com/jso-protector-python), and the [Go client](https://github.com/javascriptobfuscator-com/jso-protector-go) so behavior stays in lockstep across runtimes.
 
 Targets **.NET Standard 2.0** — runs on .NET Framework 4.6.1+, .NET Core 2.0+, .NET 5/6/7/8+, Mono, Unity, Xamarin.
 

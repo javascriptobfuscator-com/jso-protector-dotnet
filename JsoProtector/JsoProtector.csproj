@@ -20,7 +20,7 @@
     <PackageProjectUrl>https://javascriptobfuscator.com/docs/clients.aspx</PackageProjectUrl>
     <PackageTags>javascript;obfuscator;javascript-obfuscator;obfuscation;code-protection;anti-tamper;symbolication</PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <RepositoryUrl>https://github.com/richtexteditor/jso-protector-dotnet</RepositoryUrl>
+    <RepositoryUrl>https://github.com/javascriptobfuscator-com/jso-protector-dotnet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <!-- Pin the public repository's commit. Packing from the monorepo would
          otherwise record a monorepo commit hash that does not exist in this
