@@ -24,8 +24,8 @@
     <RepositoryType>git</RepositoryType>
     <!-- Pin the public repository's commit. Packing from the monorepo would
          otherwise record a monorepo commit hash that does not exist in this
-         repository. 5d01359 was verified file-for-file identical to this source. -->
-    <RepositoryCommit>5d0135954c68a1181ad0bef27e4f45ebc85978a4</RepositoryCommit>
+         repository. 2ce7129 (javascriptobfuscator-com, the home since 2026-09-14) is file-for-file identical to this source; 5d01359 was the same source in the archived richtexteditor copy. -->
+    <RepositoryCommit>2ce7129c7833f37c9f36c545aa652ebb663a83d8</RepositoryCommit>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
